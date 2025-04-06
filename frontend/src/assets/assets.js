@@ -1,760 +1,723 @@
-import logo from './logo.svg'
-import logo_dark from './logo_dark.svg'
-import search_icon from './search_icon.svg'
-import cross_icon from './cross_icon.svg'
-import upload_area from './upload_area.svg'
-import sketch from './sktech.svg'
-import microsoft_logo from './microsoft_logo.svg'
-import walmart_logo from './walmart_logo.svg'
-import accenture_logo from './accenture_logo.svg'
-import adobe_logo from './adobe_logo.svg'
-import paypal_logo from './paypal_logo.svg'
-import course_1_thumbnail from './course_1.png'
-import course_2_thumbnail from './course_2.png'
-import course_3_thumbnail from './course_3.png'
-import course_4_thumbnail from './course_4.png'
-import star from './rating_star.svg'
-import star_blank from './star_dull_icon.svg'
-import profile_img_1 from './profile_img_1.png'
-import profile_img_2 from './profile_img_2.png'
-import profile_img_3 from './profile_img_3.png'
-import arrow_icon from './arrow_icon.svg'
-import down_arrow_icon from './down_arrow_icon.svg'
-import time_left_clock_icon from './time_left_clock_icon.svg'
-import time_clock_icon from './time_clock_icon.svg'
-import user_icon from './user_icon.svg'
-import home_icon from './home_icon.svg'
-import add_icon from './add_icon.svg'
-import my_course_icon from './my_course_icon.svg'
-import person_tick_icon from './person_tick_icon.svg'
-import facebook_icon from './facebook_icon.svg'
-import instagram_icon from './instagram_icon.svg'
-import twitter_icon from './twitter_icon.svg'
-import file_upload_icon from './file_upload_icon.svg'
-import appointments_icon from './appointments_icon.svg'
-import earning_icon from './earning_icon.svg'
-import dropdown_icon from './dropdown_icon.svg'
-import patients_icon from './patients_icon.svg'
-import play_icon from './play_icon.svg'
-import blue_tick_icon from './blue_tick_icon.svg'
-import course_4 from './course_4.png'
-import profile_img from './profile_img.png'
-import profile_img2 from './profile_img2.png'
-import profile_img3 from './profile_img3.png'
-import lesson_icon from './lesson_icon.svg'
+import p_img1 from './p_img1.png'
+import p_img2_1 from './p_img2_1.png'
+import p_img2_2 from './p_img2_2.png'
+import p_img2_3 from './p_img2_3.png'
+import p_img2_4 from './p_img2_4.png'
+import p_img3 from './p_img3.png'
+import p_img4 from './p_img4.png'
+import p_img5 from './p_img5.png'
+import p_img6 from './p_img6.png'
+import p_img7 from './p_img7.png'
+import p_img8 from './p_img8.png'
+import p_img9 from './p_img9.png'
+import p_img10 from './p_img10.png'
+import p_img11 from './p_img11.png'
+import p_img12 from './p_img12.png'
+import p_img13 from './p_img13.png'
+import p_img14 from './p_img14.png'
+import p_img15 from './p_img15.png'
+import p_img16 from './p_img16.png'
+import p_img17 from './p_img17.png'
+import p_img18 from './p_img18.png'
+import p_img19 from './p_img19.png'
+import p_img20 from './p_img20.png'
+import p_img21 from './p_img21.png'
+import p_img22 from './p_img22.png'
+import p_img23 from './p_img23.png'
+import p_img24 from './p_img24.png'
+import p_img25 from './p_img25.png'
+import p_img26 from './p_img26.png'
+import p_img27 from './p_img27.png'
+import p_img28 from './p_img28.png'
+import p_img29 from './p_img29.png'
+import p_img30 from './p_img30.png'
+import p_img31 from './p_img31.png'
+import p_img32 from './p_img32.png'
+import p_img33 from './p_img33.png'
+import p_img34 from './p_img34.png'
+import p_img35 from './p_img35.png'
+import p_img36 from './p_img36.png'
+import p_img37 from './p_img37.png'
+import p_img38 from './p_img38.png'
+import p_img39 from './p_img39.png'
+import p_img40 from './p_img40.png'
+import p_img41 from './p_img41.png'
+import p_img42 from './p_img42.png'
+import p_img43 from './p_img43.png'
+import p_img44 from './p_img44.png'
+import p_img45 from './p_img45.png'
+import p_img46 from './p_img46.png'
+import p_img47 from './p_img47.png'
+import p_img48 from './p_img48.png'
+import p_img49 from './p_img49.png'
+import p_img50 from './p_img50.png'
+import p_img51 from './p_img51.png'
+import p_img52 from './p_img52.png'
 
+
+import logo from './logo.png'
+import hero_img from './hero_img.png'
+import cart_icon from './cart_icon.png'
+import bin_icon from './bin_icon.png'
+import dropdown_icon from './dropdown_icon.png'
+import exchange_icon from './exchange_icon.png'
+import profile_icon from './profile_icon.png'
+import quality_icon from './quality_icon.png'
+import search_icon from './search_icon.png'
+import star_dull_icon from './star_dull_icon.png'
+import star_icon from './star_icon.png'
+import support_img from './support_img.png'
+import menu_icon from './menu_icon.png'
+import about_img from './about_img.png'
+import contact_img from './contact_img.png'
+import razorpay_logo from './razorpay_logo.png'
+import stripe_logo from './stripe_logo.png'
+import cross_icon from './cross_icon.png'
 
 export const assets = {
     logo,
-    search_icon,
-    sketch,
-    microsoft_logo,
-    walmart_logo,
-    accenture_logo,
-    adobe_logo,
-    paypal_logo,
-    course_1_thumbnail,
-    course_2_thumbnail,
-    course_3_thumbnail,
-    course_4_thumbnail,
-    star,
-    star_blank,
-    profile_img_1,
-    profile_img_2,
-    profile_img_3,
-    arrow_icon,
+    hero_img,
+    cart_icon,
     dropdown_icon,
-    cross_icon,
-    upload_area,
-    logo_dark,
-    down_arrow_icon,
-    time_left_clock_icon,
-    time_clock_icon,
-    user_icon,
-    home_icon,
-    add_icon,
-    my_course_icon,
-    person_tick_icon,
-    facebook_icon,
-    instagram_icon,
-    twitter_icon,
-    course_4,
-    file_upload_icon,
-    appointments_icon,
-    earning_icon,
-    patients_icon,
-    profile_img,
-    profile_img2,
-    profile_img3,
-    play_icon,
-    blue_tick_icon,
-    lesson_icon
+    exchange_icon,
+    profile_icon,
+    quality_icon,
+    search_icon,
+    star_dull_icon,
+    star_icon,
+    bin_icon,
+    support_img,
+    menu_icon,
+    about_img,
+    contact_img,
+    razorpay_logo,
+    stripe_logo,
+    cross_icon
 }
 
-export const dummyEducatorData = {
-    "_id": "675ac1512100b91a6d9b8b24",
-    "name": "GreatStack",
-    "email": "user.greatstack@gmail.com",
-    "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yclFkaDBOMmFqWnBoTTRBOXZUanZxVlo0aXYifQ",
-    "createdAt": "2024-12-12T10:56:17.930Z",
-    "updatedAt": "2024-12-12T10:56:17.930Z",
-    "__v": 0
-}
-
-export const dummyTestimonial = [
+export const products = [
     {
-        name: 'Donald Jackman',
-        role: 'SWE 1 @ Amazon',
-        image: assets.profile_img_1,
-        rating: 5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        _id: "aaaaa",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 100,
+        image: [p_img1],
+        category: "Women",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L"],
+        date: 1716634345448,
+        bestseller: true
     },
     {
-        name: 'Richard Nelson',
-        role: 'SWE 2 @ Samsung',
-        image: assets.profile_img_2,
-        rating: 4,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        _id: "aaaab",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 200,
+        image: [p_img2_1,p_img2_2,p_img2_3,p_img2_4],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["M", "L", "XL"],
+        date: 1716621345448,
+        bestseller: true
     },
     {
-        name: 'James Washington',
-        role: 'SWE 2 @ Google',
-        image: assets.profile_img_3,
-        rating: 4.5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
-    },
-];
-
-export const dummyDashboardData = {
-    "totalEarnings": 707.38,
-    "enrolledStudentsData": [
-        {
-            "courseTitle": "Introduction to JavaScript",
-            "student": {
-                "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-            }
-        },
-        {
-            "courseTitle": "Advanced Python Programming",
-            "student": {
-                "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-            }
-        },
-        {
-            "courseTitle": "Web Development Bootcamp",
-            "student": {
-                "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-            }
-        },
-        {
-            "courseTitle": "Data Science with Python",
-            "student": {
-                "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-            }
-        },
-        {
-            "courseTitle": "Cybersecurity Basics",
-            "student": {
-                "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
-                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-            }
-        }
-    ],
-    "totalCourses": 8
-}
-
-export const dummyStudentEnrolled = [
-    {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Introduction to JavaScript",
-        "purchaseDate": "2024-12-20T08:39:55.509Z"
+        _id: "aaaac",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 220,
+        image: [p_img3],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "L", "XL"],
+        date: 1716234545448,
+        bestseller: true
     },
     {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Introduction to JavaScript",
-        "purchaseDate": "2024-12-20T08:59:49.964Z"
+        _id: "aaaad",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 110,
+        image: [p_img4],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "XXL"],
+        date: 1716621345448,
+        bestseller: true
     },
     {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Advanced Python Programming",
-        "purchaseDate": "2024-12-20T11:03:42.931Z"
+        _id: "aaaae",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 130,
+        image: [p_img5],
+        category: "Women",
+        subCategory: "Topwear",
+        sizes: ["M", "L", "XL"],
+        date: 1716622345448,
+        bestseller: true
     },
     {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Web Development Bootcamp",
-        "purchaseDate": "2024-12-20T11:04:48.798Z"
+        _id: "aaaaf",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 140,
+        image: [p_img6],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "L", "XL"],
+        date: 1716623423448,
+        bestseller: true
+    },
+    {
+        _id: "aaaag",
+        name: "Men Tapered Fit Flat-Front Trousers",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 190,
+        image: [p_img7],
+        category: "Men",
+        subCategory: "Bottomwear",
+        sizes: ["S", "L", "XL"],
+        date: 1716621542448,
+        bestseller: false
+    },
+    {
+        _id: "aaaah",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 140,
+        image: [p_img8],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716622345448,
+        bestseller: false
+    },
+    {
+        _id: "aaaai",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 100,
+        image: [p_img9],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["M", "L", "XL"],
+        date: 1716621235448,
+        bestseller: false
+    },
+    {
+        _id: "aaaaj",
+        name: "Men Tapered Fit Flat-Front Trousers",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 110,
+        image: [p_img10],
+        category: "Men",
+        subCategory: "Bottomwear",
+        sizes: ["S", "L", "XL"],
+        date: 1716622235448,
+        bestseller: false
+    },
+    {
+        _id: "aaaak",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 120,
+        image: [p_img11],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L"],
+        date: 1716623345448,
+        bestseller: false
+    },
+    {
+        _id: "aaaal",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 150,
+        image: [p_img12],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716624445448,
+        bestseller: false
+    },
+    {
+        _id: "aaaam",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 130,
+        image: [p_img13],
+        category: "Women",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716625545448,
+        bestseller: false
+    },
+    {
+        _id: "aaaan",
+        name: "Boy Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 160,
+        image: [p_img14],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716626645448,
+        bestseller: false
+    },
+    {
+        _id: "aaaao",
+        name: "Men Tapered Fit Flat-Front Trousers",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 140,
+        image: [p_img15],
+        category: "Men",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716627745448,
+        bestseller: false
+    },
+    {
+        _id: "aaaap",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 170,
+        image: [p_img16],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716628845448,
+        bestseller: false
+    },
+    {
+        _id: "aaaaq",
+        name: "Men Tapered Fit Flat-Front Trousers",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 150,
+        image: [p_img17],
+        category: "Men",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716629945448,
+        bestseller: false
+    },
+    {
+        _id: "aaaar",
+        name: "Boy Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 180,
+        image: [p_img18],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716631045448,
+        bestseller: false
+    },
+    {
+        _id: "aaaas",
+        name: "Boy Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 160,
+        image: [p_img19],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716632145448,
+        bestseller: false
+    },
+    {
+        _id: "aaaat",
+        name: "Women Palazzo Pants with Waist Belt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 190,
+        image: [p_img20],
+        category: "Women",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716633245448,
+        bestseller: false
+    },
+    {
+        _id: "aaaau",
+        name: "Women Zip-Front Relaxed Fit Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 170,
+        image: [p_img21],
+        category: "Women",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716634345448,
+        bestseller: false
+    },
+    {
+        _id: "aaaav",
+        name: "Women Palazzo Pants with Waist Belt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 200,
+        image: [p_img22],
+        category: "Women",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716635445448,
+        bestseller: false
+    },
+    {
+        _id: "aaaaw",
+        name: "Boy Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 180,
+        image: [p_img23],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716636545448,
+        bestseller: false
+    },
+    {
+        _id: "aaaax",
+        name: "Boy Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 210,
+        image: [p_img24],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716637645448,
+        bestseller: false
+    },
+    {
+        _id: "aaaay",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 190,
+        image: [p_img25],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716638745448,
+        bestseller: false
+    },
+    {
+        _id: "aaaaz",
+        name: "Women Zip-Front Relaxed Fit Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 220,
+        image: [p_img26],
+        category: "Women",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716639845448,
+        bestseller: false
+    },
+    {
+        _id: "aaaba",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 200,
+        image: [p_img27],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716640945448,
+        bestseller: false
+    },
+    {
+        _id: "aaabb",
+        name: "Men Slim Fit Relaxed Denim Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 230,
+        image: [p_img28],
+        category: "Men",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716642045448,
+        bestseller: false
+    },
+    {
+        _id: "aaabc",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 210,
+        image: [p_img29],
+        category: "Women",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716643145448,
+        bestseller: false
+    },
+    {
+        _id: "aaabd",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 240,
+        image: [p_img30],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716644245448,
+        bestseller: false
+    },
+    {
+        _id: "aaabe",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 220,
+        image: [p_img31],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716645345448,
+        bestseller: false
+    },
+    {
+        _id: "aaabf",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 250,
+        image: [p_img32],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716646445448,
+        bestseller: false
+    },
+    {
+        _id: "aaabg",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 230,
+        image: [p_img33],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716647545448,
+        bestseller: false
+    },
+    {
+        _id: "aaabh",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 260,
+        image: [p_img34],
+        category: "Women",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716648645448,
+        bestseller: false
+    },
+    {
+        _id: "aaabi",
+        name: "Women Zip-Front Relaxed Fit Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 240,
+        image: [p_img35],
+        category: "Women",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716649745448,
+        bestseller: false
+    },
+    {
+        _id: "aaabj",
+        name: "Women Zip-Front Relaxed Fit Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 270,
+        image: [p_img36],
+        category: "Women",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716650845448,
+        bestseller: false
+    },
+    {
+        _id: "aaabk",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 250,
+        image: [p_img37],
+        category: "Women",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716651945448,
+        bestseller: false
+    },
+    {
+        _id: "aaabl",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 280,
+        image: [p_img38],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716653045448,
+        bestseller: false
+    },
+    {
+        _id: "aaabm",
+        name: "Men Printed Plain Cotton Shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 260,
+        image: [p_img39],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716654145448,
+        bestseller: false
+    },
+    {
+        _id: "aaabn",
+        name: "Men Slim Fit Relaxed Denim Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 290,
+        image: [p_img40],
+        category: "Men",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716655245448,
+        bestseller: false
+    },
+    {
+        _id: "aaabo",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 270,
+        image: [p_img41],
+        category: "Men",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716656345448,
+        bestseller: false
+    },
+    {
+        _id: "aaabp",
+        name: "Boy Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 300,
+        image: [p_img42],
+        category: "Kids",
+        subCategory: "Topwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716657445448,
+        bestseller: false
+    },
+    {
+        _id: "aaabq",
+        name: "Kid Tapered Slim Fit Trouser",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 280,
+        image: [p_img43],
+        category: "Kids",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716658545448,
+        bestseller: false
+    },
+    {
+        _id: "aaabr",
+        name: "Women Zip-Front Relaxed Fit Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 310,
+        image: [p_img44],
+        category: "Women",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716659645448,
+        bestseller: false
+    },
+    {
+        _id: "aaabs",
+        name: "Men Slim Fit Relaxed Denim Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 290,
+        image: [p_img45],
+        category: "Men",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716660745448,
+        bestseller: false
+    },
+    {
+        _id: "aaabt",
+        name: "Men Slim Fit Relaxed Denim Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 320,
+        image: [p_img46],
+        category: "Men",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716661845448,
+        bestseller: false
+    },
+    {
+        _id: "aaabu",
+        name: "Kid Tapered Slim Fit Trouser",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 300,
+        image: [p_img47],
+        category: "Kids",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716662945448,
+        bestseller: false
+    },
+    {
+        _id: "aaabv",
+        name: "Men Slim Fit Relaxed Denim Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 330,
+        image: [p_img48],
+        category: "Men",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716664045448,
+        bestseller: false
+    },
+    {
+        _id: "aaabw",
+        name: "Kid Tapered Slim Fit Trouser",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 310,
+        image: [p_img49],
+        category: "Kids",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716665145448,
+        bestseller: false
+    },
+    {
+        _id: "aaabx",
+        name: "Kid Tapered Slim Fit Trouser",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 340,
+        image: [p_img50],
+        category: "Kids",
+        subCategory: "Bottomwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716666245448, bestseller: false
+    },
+    {
+        _id: "aaaby",
+        name: "Women Zip-Front Relaxed Fit Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 320,
+        image: [p_img51],
+        category: "Women",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716667345448,
+        bestseller: false
+    },
+    {
+        _id: "aaabz",
+        name: "Men Slim Fit Relaxed Denim Jacket",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 350,
+        image: [p_img52],
+        category: "Men",
+        subCategory: "Winterwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716668445448,
+        bestseller: false
     }
-]
 
-export const dummyCourses = [
-    {
-        "_id": "605c72efb3f1c2b1f8e4e1a1",
-        "courseTitle": "Introduction to JavaScript",
-        "courseDescription": "<h2>Learn the Basics of JavaScript</h2><p>JavaScript is a versatile programming language that powers the web. In this course, you will learn the fundamentals of JavaScript, including syntax, data types, and control structures.</p><p>This course is perfect for beginners who want to start their journey in web development. By the end of this course, you will be able to create interactive web pages and understand the core concepts of JavaScript.</p><ul><li>Understand the basics of programming</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>",
-        "coursePrice": 49.99,
-        "isPublished": true,
-        "discount": 20,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "Getting Started with JavaScript",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture1",
-                        "lectureTitle": "What is JavaScript?",
-                        "lectureDuration": 16,
-                        "lectureUrl": "https://youtu.be/CBWnBi-awSA",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Setting Up Your Environment",
-                        "lectureDuration": 19,
-                        "lectureUrl": "https://youtu.be/4l87c2aeB4I",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "Variables and Data Types",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "Understanding Variables",
-                        "lectureDuration": 20,
-                        "lectureUrl": "https://youtu.be/pZQeBJsGoDQ",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "Data Types in JavaScript",
-                        "lectureDuration": 10,
-                        "lectureUrl": "https://youtu.be/ufHT2WEkkC4",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [
-            {
-                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
-                "_id": "6773e37360cb0ab974342314"
-            }
-        ],
-        "createdAt": "2024-12-17T08:16:53.622Z",
-        "updatedAt": "2025-01-02T04:47:44.701Z",
-        "__v": 4,
-        "courseThumbnail": "https://img.youtube.com/vi/CBWnBi-awSA/maxresdefault.jpg"
-    },
-    {
-        "_id": "675ac1512100b91a6d9b8b24",
-        "courseTitle": "Advanced Python Programming",
-        "courseDescription": "<h2>Deep Dive into Python Programming</h2><p>This course is designed for those who have a basic understanding of Python and want to take their skills to the next level. You will explore advanced topics such as decorators, generators, and context managers.</p><p>By the end of this course, you will be able to write efficient and clean Python code, and understand how to leverage Python's powerful features for real-world applications.</p><ul><li>Master advanced data structures</li><li>Implement object-oriented programming concepts</li><li>Work with libraries and frameworks</li></ul>",
-        "coursePrice": 79.99,
-        "isPublished": true,
-        "discount": 15,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "Advanced Data Structures",
-                "chapterContent": [
-                    {
-                        "lectureId": " lecture1",
-                        "lectureTitle": "Lists and Tuples",
-                        "lectureDuration": 720,
-                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Dictionaries and Sets",
-                        "lectureDuration": 850,
-                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "Object-Oriented Programming",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "Classes and Objects",
-                        "lectureDuration": 900,
-                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "Inheritance and Polymorphism",
-                        "lectureDuration": 950,
-                        "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [
-            {
-                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
-                "_id": "6776369244daad0f313d81a9"
-            }
-        ],
-        "createdAt": "2024-12-17T08:16:53.622Z",
-        "updatedAt": "2025-01-02T06:47:54.446Z",
-        "__v": 3,
-        "courseThumbnail": "https://img.youtube.com/vi/HdLIMoQkXFA/maxresdefault.jpg"
-    },
-    {
-        "_id": "605c72efb3f1c2b1f8e4e1ae",
-        "courseTitle": "Cybersecurity Basics",
-        "courseDescription": "<h2>Protect Systems and Networks</h2><p>Cybersecurity is critical in today's digital age. This course introduces the fundamentals of cybersecurity, including threat analysis, ethical hacking, and secure programming practices.</p><p>By the end of this course, you will understand how to identify vulnerabilities and implement security measures effectively.</p><ul><li>Understand security protocols</li><li>Learn about encryption techniques</li><li>Conduct basic penetration testing</li></ul>",
-        "coursePrice": 69.99,
-        "isPublished": true,
-        "discount": 15,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "Introduction to Cybersecurity",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture1",
-                        "lectureTitle": "What is Cybersecurity?",
-                        "lectureDuration": 10,
-                        "lectureUrl": "https://youtu.be/samplelink5",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Types of Cyber Threats",
-                        "lectureDuration": 18,
-                        "lectureUrl": "https://youtu.be/samplelink6",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "Basic Security Practices",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "Password Management",
-                        "lectureDuration": 15,
-                        "lectureUrl": "https://youtu.be/samplelink7",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "Network Security Essentials",
-                        "lectureDuration": 20,
-                        "lectureUrl": "https://youtu.be/samplelink8",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [],
-        "createdAt": "2024-12-27T11:30:00.000Z",
-        "updatedAt": "2024-12-31T04:14:49.773Z",
-        "__v": 2,
-        "courseThumbnail": "https://img.youtube.com/vi/jZFaMEqEqEQ/maxresdefault.jpg"
-    },
-    {
-        "_id": "605c72efb3f1c2b1f8e4e1a7",
-        "courseTitle": "Web Development Bootcamp",
-        "courseDescription": "<h2>Become a Full-Stack Web Developer</h2><p>This comprehensive bootcamp covers everything you need to know to become a full-stack web developer. From HTML and CSS to JavaScript and backend technologies, this course is designed to take you from beginner to job-ready.</p><p>Throughout the course, you will work on real-world projects, build a portfolio, and gain the skills necessary to succeed in the tech industry.</p><ul><li>Learn front-end and back-end development</li><li>Build responsive and dynamic web applications</li><li>Understand databases and server-side programming</li></ul>",
-        "coursePrice": 99.99,
-        "isPublished": true,
-        "discount": 25,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "HTML & CSS Basics",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture1",
-                        "lectureTitle": "Introduction to HTML",
-                        "lectureDuration": 600,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Styling with CSS",
-                        "lectureDuration": 720,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "JavaScript Fundamentals",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "JavaScript Basics",
-                        "lectureDuration": 800,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "DOM Manipulation",
-                        "lectureDuration": 850,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [],
-        "createdAt": "2024-12-17T08:16:53.622Z",
-        "updatedAt": "2024-12-31T05:31:27.290Z",
-        "__v": 2,
-        "courseThumbnail": "https://img.youtube.com/vi/lpx2zFkapIk/maxresdefault.jpg"
-    },
-    {
-        "_id": "605c72efb3f1c2b1f8e4e1ac",
-        "courseTitle": "Cloud Computing Essentials",
-        "courseDescription": "<h2>Master Cloud Fundamentals</h2><p>Learn the foundations of cloud computing and explore popular cloud platforms like AWS, Azure, and Google Cloud. This course is ideal for IT professionals and developers looking to transition to cloud-based solutions.</p><p>By the end of this course, you will understand cloud services, deployment models, and best practices for using cloud resources efficiently.</p><ul><li>Understand cloud architecture</li><li>Learn to work with AWS, Azure, and GCP</li><li>Explore serverless computing and storage solutions</li></ul>",
-        "coursePrice": 69.99,
-        "isPublished": true,
-        "discount": 20,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "Cloud Fundamentals",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture1",
-                        "lectureTitle": "What is Cloud Computing?",
-                        "lectureDuration": 600,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Cloud Service Models",
-                        "lectureDuration": 720,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "Exploring Cloud Platforms",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "AWS Basics",
-                        "lectureDuration": 800,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "Introduction to Google Cloud",
-                        "lectureDuration": 850,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [],
-        "createdAt": "2024-12-17T08:16:53.622Z",
-        "updatedAt": "2024-12-31T05:32:55.357Z",
-        "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/0yboGn8errU/maxresdefault.jpg"
-    },
-    {
-        "_id": "605c72efb3f1c2b1f8e4e1ad",
-        "courseTitle": "Data Science with Python",
-        "courseDescription": "<h2>Start Your Data Science Journey</h2><p>Data Science is one of the most in-demand fields in the world. This course teaches you the essentials of data analysis, visualization, and machine learning using Python. Learn libraries like Pandas, NumPy, Matplotlib, and Scikit-learn.</p><p>By the end of this course, you will be equipped to work on real-world data projects and gain insights from data.</p><ul><li>Data cleaning and preprocessing</li><li>Exploratory Data Analysis (EDA)</li><li>Build predictive models</li></ul>",
-        "coursePrice": 89.99,
-        "isPublished": true,
-        "discount": 20,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "Python for Data Science",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture1",
-                        "lectureTitle": "Python Basics",
-                        "lectureDuration": 30,
-                        "lectureUrl": "https://youtu.be/samplelink1",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Working with NumPy",
-                        "lectureDuration": 25,
-                        "lectureUrl": "https://youtu.be/samplelink2",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "Data Visualization",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "Introduction to Matplotlib",
-                        "lectureDuration": 20,
-                        "lectureUrl": "https://youtu.be/samplelink3",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "Advanced Visualizations with Seaborn",
-                        "lectureDuration": 25,
-                        "lectureUrl": "https://youtu.be/samplelink4",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [
-            {
-                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
-                "_id": "6773acf160cb0ab974342248"
-            }
-        ],
-        "createdAt": "2024-12-27T10:00:00.000Z",
-        "updatedAt": "2024-12-31T09:57:48.992Z",
-        "__v": 3,
-        "courseThumbnail": "https://img.youtube.com/vi/E4znbZgUWzA/maxresdefault.jpg"
-    },
-    {
-        "_id": "605c72efb3f1c2b1f8e4e1aa",
-        "courseTitle": "Data Science and Machine Learning",
-        "courseDescription": "<h2>Unlock the Power of Data</h2><p>This course provides a comprehensive introduction to data science and machine learning. You will learn how to analyze data, build predictive models, and apply machine learning algorithms to real-world problems.</p><p>By the end of this course, you will have a solid understanding of data manipulation, visualization, and machine learning techniques, enabling you to make data-driven decisions.</p><ul><li>Understand data analysis and visualization</li><li>Learn machine learning algorithms and their applications</li><li>Work with popular data science libraries like Pandas and Scikit-Learn</li></ul>",
-        "coursePrice": 89.99,
-        "isPublished": true,
-        "discount": 30,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "Introduction to Data Science",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture1",
-                        "lectureTitle": "What is Data Science?",
-                        "lectureDuration": 600,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Data Collection and Cleaning",
-                        "lectureDuration": 720,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "Machine Learning Basics",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "Supervised vs Unsupervised Learning",
-                        "lectureDuration": 800,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "Building Your First Model",
-                        "lectureDuration": 850,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [],
-        "createdAt": "2024-12-17T08:16:53.622Z",
-        "updatedAt": "2025-01-02T06:53:59.753Z",
-        "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/631lFJdQvoo/maxresdefault.jpg"
-    },
-    {
-        "_id": "605c72efb3f1c2b1f8e4e1ab",
-        "courseTitle": "Introduction to Cybersecurity",
-        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
-        "coursePrice": 59.99,
-        "isPublished": true,
-        "discount": 15,
-        "courseContent": [
-            {
-                "chapterId": "chapter1",
-                "chapterOrder": 1,
-                "chapterTitle": "Cybersecurity Basics",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture1",
-                        "lectureTitle": "Introduction to Cybersecurity",
-                        "lectureDuration": 700,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture2",
-                        "lectureTitle": "Understanding Cyber Threats",
-                        "lectureDuration": 750,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            },
-            {
-                "chapterId": "chapter2",
-                "chapterOrder": 2,
-                "chapterTitle": "Network Security Fundamentals",
-                "chapterContent": [
-                    {
-                        "lectureId": "lecture3",
-                        "lectureTitle": "Securing Networks",
-                        "lectureDuration": 800,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": true,
-                        "lectureOrder": 1
-                    },
-                    {
-                        "lectureId": "lecture4",
-                        "lectureTitle": "Firewalls and VPNs",
-                        "lectureDuration": 850,
-                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
-                        "isPreviewFree": false,
-                        "lectureOrder": 2
-                    }
-                ]
-            }
-        ],
-        "educator": "675ac1512100b91a6d9b8b24",
-        "enrolledStudents": [
-            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
-        ],
-        "courseRatings": [],
-        "createdAt": "2024-12-17T08:16:53.622Z",
-        "updatedAt": "2025-01-02T06:56:13.208Z",
-        "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
-    }
 ]
