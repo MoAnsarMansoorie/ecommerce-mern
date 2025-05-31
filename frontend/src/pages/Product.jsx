@@ -6,7 +6,7 @@ import RelatedProducts from '../components/RelatedProducts';
 
 const Product = () => {
   const { productId } = useParams();  // Here you can fetch product details using the productId
-  const { products, currency } = useContext(ShopContext); // Assuming you have a ShopContext that provides products
+  const { products, currency, addToCart } = useContext(ShopContext); // Assuming you have a ShopContext that provides products
   const [productData, setProductData] = useState(false);
   const [image, setImage] = useState('');
   const [size, setSize] = useState('');
@@ -84,7 +84,7 @@ const Product = () => {
                 </button>
               ))}
             </div>
-            <button className='bg-black text-white px-8 py-2 text-sm active:bg-gray-700'>ADD TO CART</button>
+            <button onClick={() => addToCart(productData._id, size)} className='bg-black text-white px-8 py-2 text-sm active:bg-gray-700'>ADD TO CART</button>
             <hr className='mt-5 sm:w-4/5' />
             <div className='flex flex-col text-gray-500 mt-5 text-sm gap-1'>
               <p>100% original product.</p>
