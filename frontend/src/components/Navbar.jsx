@@ -39,7 +39,7 @@ const Navbar = () => {
                 {/* <img src={assets.cart_icon} alt='Cart' className='w-5 cursor-pointer' /> */}
 
                 <div className='group relative'>
-                    <img src={assets.profile_icon} alt='User' className='w-5 cursor-pointer' />
+                    <Link to="/login"><img src={assets.profile_icon} alt='User' className='w-5 cursor-pointer' /></Link>
                     {/* Dropdown menu */}
                     <div className='absolute hidden group-hover:block bg-white dropdown-menu p-4 right-0'>
                         <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
