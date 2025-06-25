@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import connectDb from "./config/connectDb.js";
 import connectCloudinary from "./config/cloudinary.js";
 import userRoute from "./routes/userRoute.js";
+import productRoute from "./routes/productRoute.js";
 
 dotenv.config();
 connectDb();
@@ -19,6 +20,8 @@ app.use(cors());
 
 // api endpoints
 app.use("/api/v1/user", userRoute);
+app.use("/api/v1/product", productRoute);
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
