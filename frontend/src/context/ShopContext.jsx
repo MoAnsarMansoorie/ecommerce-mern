@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
-import { products } from "../assets/assets";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export const ShopContext = createContext();
 
@@ -9,9 +9,12 @@ const ShopContextProvider = ({ children }) => {
 
     const currency = "$"
     const delivery_fee = 10
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8080";
     const [search, setSearch] = useState("");
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
+    const [products, setProducts] = useState([]);
+    const [token, setToken] = useState("")
     const navigate = useNavigate();
 
     const addToCart = async (itemId, size) => {
@@ -92,13 +95,43 @@ const ShopContextProvider = ({ children }) => {
         return totalAmount;
     }
 
+    // fetch products from backend
+    const getProductsProducts = async () => {
+        try {
+            const response = await axios.get(`${backendUrl}/api/v1/product/list`);
+            // console.log("Products fetched successfully:", response.data);
+            if(response.data.success) {
+                setProducts(response.data.products);
+            }
+            else {
+                toast.error("Failed to load products. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error fetching products:", error);
+            toast.error(error.message || "Failed to load products. Please try again later.");
+        }
+    }
+
+    useEffect(() => {
+        getProductsProducts();
+    }, [])
+    
+    useEffect(() => {
+        if (!token || localStorage.getItem('token')) {
+            setToken(localStorage.getItem("token"));
+        } 
+    },[token]);
+
     const value = {
         products, currency, delivery_fee,
         search, setSearch,
         showSearch, setShowSearch,
-        cartItems, addToCart,
+        cartItems, setCartItems,
+        addToCart,
         getCartCount, updateQuantity, 
-        getCartAmount, navigate
+        getCartAmount, navigate,
+        token, setToken,
+        backendUrl
     };
 
     return (
