@@ -48,6 +48,21 @@ const placeOrderRazorpayControllers = async (req, res) => {
 
 // All orders data for admin panel
 const allOrdersControllers = async (req, res) => {
+    try {
+        const orders = await orderModel.find({})
+        res.status(200).json({
+            success: true,
+            message: "All orders data",
+            orders
+        })
+        
+    } catch (error) {
+        console.error("Error fetching user orders data for admin panel:", error);
+        res.status(500).json({
+            success: false,
+            message: "Internal server error"
+        });
+    }
 
 }
 
@@ -83,6 +98,20 @@ const userOrdersControllers = async (req, res) => {
 
 // update order status by admin
 const updateOrderStatusControllers = async (req, res) => {
+    try {
+        const { orderId, status } = req.body
+        
+        await orderModel.findByIdAndUpdate(orderId, {status})
+
+        res.status(200).json({
+            success: true,
+            message: "Status updated successfully",
+            status
+        })
+        
+    } catch (error) {
+        console.log(error)
+    }
 
 }
 
