@@ -26,6 +26,39 @@ const PlaceOrder = () => {
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
+  const initPay = (order) => {
+    const options= {
+      key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+      amount: order.amount,
+      currency: order.currency,
+      name: "Order Payment",
+      description: "Order Razorpay Payment",
+      order_id: order.id,
+      // receipt: order.receipt,
+      handler: async (response) => {
+        console.log(response)
+        try {
+          const { data } = await axios.post(`${backendUrl}/api/v1/order/verifyrazorpay`, response, {
+            headers: {
+              token
+            }
+          })
+          if (data.success) {
+            navigate("/orders")
+            setCartItems({})
+          }
+          
+        } catch (error) {
+          console.error("Error placing order with Razorpay:", error);
+          toast.error(error)
+        }
+      }
+    }
+
+    const rzp = new window.Razorpay(options)
+    rzp.open()
+  }
+
   const onSubmitHandler = async (e) => {
     e.preventDefault()
     try {
@@ -83,6 +116,34 @@ const PlaceOrder = () => {
               "Failed to place order. Please try again."
             );
           }
+          break;
+        
+        case "razorpay":
+          try {
+            const responseRazorpay = await axios.post(
+              `${backendUrl}/api/v1/order/razorpay`,
+              orderData,
+              {
+                headers: {
+                  Authorization: `Bearer ${token}`,
+                },
+              }
+            );
+
+            if(responseRazorpay.data.success){
+              initPay(responseRazorpay.data.order)
+            }
+            
+          } catch (error) {
+            console.error("Order placement razorpay error:", error);
+            toast.error(
+              error.response?.data?.message ||
+              error.message ||
+              "Failed to place order. Please try again."
+            );
+          }
+
+          
           break;
         
         default:

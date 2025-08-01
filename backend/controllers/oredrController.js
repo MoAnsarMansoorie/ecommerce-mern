@@ -1,6 +1,10 @@
 import userModel from "../models/userModel.js";
 import orderModel from "../models/orderModel.js";
+import razorpay from "razorpay"
 
+// global variable
+const currency = "inr"
+const deliveryCharge = 10
 
 // Placing order using COD method
 const placeOrderCodControllers = async (req, res) => { 
@@ -43,7 +47,93 @@ const placeOrderStripeControllers = async (req, res) => {
 
 // Placing order using Razorpay Method
 const placeOrderRazorpayControllers = async (req, res) => {
+    try {
+        // Initialize Razorpay here, after dotenv.config() has run
+        const razorpayInstance = new razorpay({
+            key_id: process.env.RAZORPAY_KEY_ID,
+            key_secret: process.env.RAZORPAY_KEY_SECRET
+        });
 
+        const userId = req.user.id; // Get userId from token
+        const { items, amount, address } = req.body;
+
+        const orderData = {
+            userId,
+            items,
+            amount,
+            address,
+            paymentMethod: "Razorpay",
+            payment: false,
+            date: Date.now()
+        }
+
+        const newOrder = new orderModel(orderData);
+        await newOrder.save();
+
+        const options = {
+            amount: amount * 100,
+            currency: currency.toUpperCase(),
+            receipt: newOrder._id.toString()
+        }
+
+        await razorpayInstance.orders.create(options, (error, order) => {
+            if (error) {
+                console.log("Razorpay error", error)
+                return res.status(401).json({
+                    success: false,
+                    message: "Payment has failed",
+                    error
+                })
+            }
+            return res.status(200).json({
+                success: true,
+                message: "Payment has completed successfully",
+                order
+            })
+        })
+
+        
+    } catch (error) {
+        console.error("Error placing order with Razorpay:", error);
+        res.status(500).json({ message: "Internal server error" });
+        
+    }
+}
+
+// verify razorpay order id
+const verifyRazorpayController = async (req, res) => {
+    try {
+        // Initialize Razorpay here
+        const razorpayInstance = new razorpay({
+            key_id: process.env.RAZORPAY_KEY_ID,
+            key_secret: process.env.RAZORPAY_KEY_SECRET
+        });
+
+        // const userId = req.user.id; // Get userId from token
+        const { userId, razorpay_order_id } = req.body;
+
+        const orderInfo = await razorpayInstance.orders.fetch(razorpay_order_id)
+        console.log(orderInfo)
+
+        if (orderInfo.status === "paid") {
+            await orderModel.findByIdAndUpdate(orderInfo.receipt, {payment: true})
+            await userModel.findByIdAndUpdate(userId, { cartData: {} })
+            res.status(200).json({
+                success: true,
+                message: "Payment successful"
+            })
+        } else {
+            res.status(400).json({
+                success: false,
+                message: "Payment failed"
+            })
+        }
+        
+    } catch (error) {
+        console.error("Error placing order with Razorpay:", error);
+        res.status(500).json({ message: "Internal server error" });
+        
+    }
 }
 
 // All orders data for admin panel
@@ -115,4 +205,4 @@ const updateOrderStatusControllers = async (req, res) => {
 
 }
 
-export { placeOrderCodControllers, placeOrderStripeControllers, placeOrderRazorpayControllers, allOrdersControllers, userOrdersControllers, updateOrderStatusControllers };
+export { verifyRazorpayController ,placeOrderCodControllers, placeOrderStripeControllers, placeOrderRazorpayControllers, allOrdersControllers, userOrdersControllers, updateOrderStatusControllers };

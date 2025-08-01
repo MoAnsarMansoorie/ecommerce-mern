@@ -1,6 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import connectDb from "./config/connectDb.js";
 import connectCloudinary from "./config/cloudinary.js";
 import userRoute from "./routes/userRoute.js";
@@ -8,7 +10,6 @@ import productRoute from "./routes/productRoute.js";
 import cartRoute from "./routes/cartRoute.js";
 import orderRoute from "./routes/orderRoute.js";
 
-dotenv.config();
 connectDb();
 connectCloudinary();
 
